@@ -1,0 +1,14 @@
+@use "variables";
+@use "mixins";
+@use "extends";
+
+.actorsSection {
+    @include mixins.sectionimg();
+    @include mixins.textcolor($colortxt:variables.$greendark);
+}
+
+.actors__paragh,
+.card-text {
+    @extend %textsecondaire;
+    font-style: italic;
+}

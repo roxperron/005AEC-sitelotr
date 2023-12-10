@@ -1,0 +1,23 @@
+@use "variables";
+@use "mixins";
+@use "extends";
+
+
+.trilogySection {
+    @include mixins.sectioncolor($backcolor:variables.$greendark);
+    @include mixins.textcolor();
+}
+
+
+
+
+@media screen and (max-width:767px) {
+    .tome__title {
+        order: 1;
+        text-align: center;
+    }
+
+    .tome__img {
+        order: 2;
+    }
+}

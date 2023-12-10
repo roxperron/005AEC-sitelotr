@@ -1,0 +1,26 @@
+@use "variables";
+
+@mixin sectionimg($backimg:variables.$background1) {
+    background-image: $backimg;
+    background-color: rgba(255, 255, 255, 0.8);
+    background-blend-mode: lighten;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto;
+    padding: 100px;
+}
+
+
+@mixin sectioncolor($backcolor:variables.$greendark, $paddef:50px) {
+    background-color: $backcolor;
+    padding: $paddef;
+}
+
+@mixin textcolor($colortxt:variables.$gold, $ff:variables.$fontprincipale, $fs:normal, $fsi:medium, $fw:600) {
+    color: $colortxt;
+    font-family: $ff;
+    font-style: $fs;
+    font-size: $fsi;
+    font-weight: $fw;
+}

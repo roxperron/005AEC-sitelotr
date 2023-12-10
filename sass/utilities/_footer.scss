@@ -1,0 +1,40 @@
+@use "variables";
+@use "mixins";
+@use "extends";
+
+footer {
+    @include mixins.sectioncolor($backcolor:variables.$gold);
+    @include mixins.textcolor($colortxt:variables.$greendark);
+    width: 100%;
+    margin: auto;
+}
+
+.address__links {
+    text-decoration: none;
+    color: variables.$greendark;
+    font-family: variables.$fontsecondaire;
+
+    &:hover {
+        color: variables.$gray;
+    }
+}
+
+.footer__text{
+    font-family: variables.$fontsecondaire;
+    font-size: 25px;
+}
+
+
+@media screen and (max-width: 767px) {
+    .footerContainer, .footer__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+    }
+
+
+
+
+}

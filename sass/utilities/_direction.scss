@@ -1,0 +1,33 @@
+@use "variables";
+@use "mixins";
+@use "extends";
+
+.directionSection {
+    @include mixins.sectionimg();
+    @include mixins.textcolor($colortxt:variables.$greendark);
+}
+
+
+.accordion-body {
+    @extend %textsecondaire;
+    font-size: 20px;
+    color: variables.$greendark;
+    background-color: variables.$white;
+}
+
+.accordion-item {
+    padding: 10px;
+}
+
+
+@media screen and (max-width:991px) {
+    .various__text {
+        order: 1;
+        padding-bottom: 25px;
+    }
+
+    .various__img {
+        order: 2;
+    }
+
+}

@@ -1,0 +1,303 @@
+/* FONT*/
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@500&family=Cinzel+Decorative:wght@700&family=Crimson+Pro:wght@300&display=swap");
+/*COLORS*/
+/*BACKGROUNDS*/
+.buttonPresentation--btn2 {
+  background-color: #4B6B56;
+  color: #C7B8BA;
+  font-family: "Crimson Pro";
+  font-size: 20px;
+  border-radius: 5px;
+  border: 2px solid #262425;
+  box-shadow: 2px 6px 10px #262425;
+  padding: 5px;
+  text-decoration: none;
+}
+.buttonPresentation--btn2:hover {
+  background-color: #364d3e;
+  text-decoration: underline;
+  color: #C7B8BA;
+}
+
+.confirmation--btn, .buttonVarious--btn, .buttonPresentation--btn1, .buttonExtract--btn {
+  background-color: #987F2E;
+  color: #FAF9F8;
+  font-family: "Crimson Pro";
+  font-size: 20px;
+  border-radius: 5px;
+  border: 2px solid #262425;
+  box-shadow: 2px 6px 10px #262425;
+  padding: 5px;
+  text-decoration: none;
+}
+.confirmation--btn:hover, .buttonVarious--btn:hover, .buttonPresentation--btn1:hover, .buttonExtract--btn:hover {
+  background-color: #bfa03a;
+  text-decoration: underline;
+  color: #FAF9F8;
+}
+
+input::-moz-placeholder {
+  font-family: "Crimson Pro";
+  font-style: italic;
+  font-size: 30px;
+}
+
+input:-ms-input-placeholder {
+  font-family: "Crimson Pro";
+  font-style: italic;
+  font-size: 30px;
+}
+
+.txtPresentation__parag, .textExtract__paragh, .email, input::placeholder, .accordion-body, .actors__paragh,
+.card-text {
+  font-family: "Crimson Pro";
+  font-style: italic;
+  font-size: 30px;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #987F2E;
+  padding: 50px;
+  color: #2C5A4A;
+  font-family: "Cinzel Decorative";
+  font-style: normal;
+  font-size: medium;
+  font-weight: 600;
+  width: 100%;
+  margin: auto;
+}
+
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
+.listNav__links {
+  text-decoration: none;
+  font-family: "Cinzel Decorative";
+  color: #2C5A4A;
+  font-family: "Cinzel Decorative";
+  font-style: normal;
+  font-size: medium;
+  font-weight: 600;
+}
+.listNav__links:hover {
+  color: #C7B8BA;
+}
+
+.actorsSection {
+  background-image: url("../img/background/background1.jpg");
+  background-color: rgba(255, 255, 255, 0.8);
+  background-blend-mode: lighten;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: auto;
+  padding: 100px;
+  color: #2C5A4A;
+  font-family: "Cinzel Decorative";
+  font-style: normal;
+  font-size: medium;
+  font-weight: 600;
+}
+
+.actors__paragh,
+.card-text {
+  font-style: italic;
+}
+
+.filmImgSection {
+  background-color: #2C5A4A;
+  padding: 50px;
+  color: #987F2E;
+  font-family: "Cinzel Decorative";
+  font-style: normal;
+  font-size: medium;
+  font-weight: 600;
+}
+
+.direction__paragragh {
+  padding: 50px 50px;
+}
+
+.directionSection {
+  background-image: url("../img/background/background1.jpg");
+  background-color: rgba(255, 255, 255, 0.8);
+  background-blend-mode: lighten;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: auto;
+  padding: 100px;
+  color: #2C5A4A;
+  font-family: "Cinzel Decorative";
+  font-style: normal;
+  font-size: medium;
+  font-weight: 600;
+}
+
+.accordion-body {
+  font-size: 20px;
+  color: #2C5A4A;
+  background-color: #FAF9F8;
+}
+
+.accordion-item {
+  padding: 10px;
+}
+
+@media screen and (max-width: 991px) {
+  .various__text {
+    order: 1;
+    padding-bottom: 25px;
+  }
+  .various__img {
+    order: 2;
+  }
+}
+footer {
+  background-color: #987F2E;
+  padding: 50px;
+  color: #2C5A4A;
+  font-family: "Cinzel Decorative";
+  font-style: normal;
+  font-size: medium;
+  font-weight: 600;
+  width: 100%;
+  margin: auto;
+}
+
+.address__links {
+  text-decoration: none;
+  color: #2C5A4A;
+  font-family: "Crimson Pro";
+}
+.address__links:hover {
+  color: #C7B8BA;
+}
+
+.footer__text {
+  font-family: "Crimson Pro";
+  font-size: 25px;
+}
+
+@media screen and (max-width: 767px) {
+  .footerContainer, .footer__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+.extractSection {
+  background-color: #2C5A4A;
+  padding: 50px;
+  color: #987F2E;
+  font-family: "Cinzel Decorative";
+  font-style: normal;
+  font-size: medium;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 1200px) {
+  .iframeContainer {
+    width: 700px;
+    height: 500px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .iframeContainer {
+    display: none;
+  }
+}
+.carouselSection {
+  background-image: url("../img/background/background1.jpg");
+  background-color: rgba(255, 255, 255, 0.8);
+  background-blend-mode: lighten;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: auto;
+  padding: 100px;
+  color: #2C5A4A;
+  font-family: "Cinzel Decorative";
+  font-style: normal;
+  font-size: medium;
+  font-weight: 600;
+}
+
+.txtPresentation__parag {
+  padding: 50px 50px;
+}
+
+.trilogySection {
+  background-color: #2C5A4A;
+  padding: 50px;
+  color: #987F2E;
+  font-family: "Cinzel Decorative";
+  font-style: normal;
+  font-size: medium;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 767px) {
+  .tome__title {
+    order: 1;
+    text-align: center;
+  }
+  .tome__img {
+    order: 2;
+  }
+}
+.variousSection {
+  background-image: url("../img/background/background1.jpg");
+  background-color: rgba(255, 255, 255, 0.8);
+  background-blend-mode: lighten;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: auto;
+  padding: 100px;
+  color: #2C5A4A;
+  font-family: "Cinzel Decorative";
+  font-style: normal;
+  font-size: medium;
+  font-weight: 600;
+}
+
+.confirmationSection {
+  background-image: url("../img/background/background2.jpg");
+}
+
+.confirmation {
+  text-align: center;
+  border: 2px solid #262425;
+  border-radius: 25px;
+  color: #C7B8BA;
+  background-color: #2C5A4A;
+  margin: 350px;
+  padding: 50px;
+}
+
+.confirmation--btn {
+  color: #C7B8BA;
+  padding: 10px;
+}
+.confirmation--btn:hover {
+  color: #2C5A4A;
+}

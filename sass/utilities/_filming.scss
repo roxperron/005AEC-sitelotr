@@ -1,0 +1,15 @@
+@use "variables";
+@use "mixins";
+@use "extends";
+
+.filmImgSection {
+    @include mixins.sectioncolor();
+    @include mixins.textcolor();
+}
+
+
+
+.direction__paragragh {
+    padding: 50px 50px;
+
+}

@@ -1,0 +1,29 @@
+@use "variables";
+@use "mixins";
+@use "extends";
+
+.confirmationSection {
+    background-image: variables.$background2;
+
+}
+
+.confirmation {
+    text-align: center;
+    border: 2px solid #262425;
+    border-radius: 25px;
+    color: variables.$gray;
+    background-color: variables.$greendark;
+    margin: 350px;
+    padding: 50px;
+
+}
+
+.confirmation--btn {
+    @extend %button-light;
+    color: variables.$gray;
+    padding: 10px;
+
+    &:hover {
+        color: variables.$greendark;
+    }
+}

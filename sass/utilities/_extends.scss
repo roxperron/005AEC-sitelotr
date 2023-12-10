@@ -1,0 +1,47 @@
+@use "variables";
+
+%button-dark {
+    background-color: variables.$greenlight;
+    color: variables.$gray;
+    font-family: variables.$fontsecondaire;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 2px solid #262425;
+    box-shadow: 2px 6px 10px #262425;
+    padding: 5px;
+    text-decoration: none;
+
+    &:hover {
+        background-color: darken(variables.$greenlight, 10%);
+        text-decoration: underline;
+        color: variables.$gray;
+    }
+}
+
+%button-light {
+    background-color: variables.$gold;
+    color: variables.$white;
+    font-family: variables.$fontsecondaire;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 2px solid #262425;
+    box-shadow: 2px 6px 10px #262425;
+    padding: 5px;
+    text-decoration: none;
+
+    &:hover {
+        background-color: lighten(variables.$gold, 10%);
+        text-decoration: underline;
+        color: variables.$white;
+    }
+}
+
+%textsecondaire {
+    font-family: variables.$fontsecondaire;
+    font-style: italic;
+    font-size: 30px;
+}
+
+%textprincipale {
+    font-family: variables.$fontprincipale;
+}

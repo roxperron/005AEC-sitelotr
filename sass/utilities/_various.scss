@@ -1,0 +1,13 @@
+@use "variables";
+@use "mixins";
+@use "extends";
+
+.variousSection {
+    @include mixins.sectionimg();
+    @include mixins.textcolor($colortxt:variables.$greendark);
+}
+
+
+.buttonVarious--btn {
+    @extend %button-light;
+}

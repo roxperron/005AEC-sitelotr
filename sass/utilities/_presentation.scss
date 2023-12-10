@@ -1,0 +1,28 @@
+@use "variables";
+@use "mixins";
+@use "extends";
+
+
+.carouselSection {
+  @include mixins.sectionimg();
+  @include mixins.textcolor($colortxt:variables.$greendark);
+}
+
+.txtPresentation__parag {
+  @extend %textsecondaire;
+  padding: 50px 50px;
+}
+
+
+.buttonPresentation--btn1 {
+  @extend %button-light;
+
+
+}
+
+
+
+.buttonPresentation--btn2 {
+  @extend %button-dark;
+
+}

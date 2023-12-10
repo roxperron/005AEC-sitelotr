@@ -1,0 +1,47 @@
+@use "variables";
+@use "mixins";
+@use "extends";
+
+
+.extractSection {
+    @include mixins.sectioncolor();
+    @include mixins.textcolor();
+}
+
+
+
+.textExtract__paragh {
+    @extend %textsecondaire;
+}
+
+.email {
+    @extend %textsecondaire;
+}
+
+input::placeholder {
+    @extend %textsecondaire;
+}
+
+.buttonExtract--btn {
+    @extend %button-light;
+}
+
+.textExtract__paragh {
+    @extend %textsecondaire;
+
+}
+
+
+
+@media screen and (min-width : 1200px) {
+    .iframeContainer {
+        width: 700px;
+        height: 500px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .iframeContainer {
+        display: none;
+    }
+}

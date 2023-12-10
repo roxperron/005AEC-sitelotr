@@ -1,0 +1,34 @@
+@use 'variables';
+@use 'mixins';
+@use 'extends';
+
+
+header {
+  @include mixins.sectioncolor($backcolor:variables.$gold);
+  @include mixins.textcolor($colortxt:variables.$greendark);
+  width: 100%;
+  margin: auto;
+}
+
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
+.listNav__links {
+  text-decoration: none;
+  font-family: variables.$fontprincipale;
+  @include mixins.textcolor($colortxt:variables.$greendark);
+
+  &:hover {
+    color: variables.$gray;
+  }
+}
